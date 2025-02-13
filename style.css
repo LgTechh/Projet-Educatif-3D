@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#canvas {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shape-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: grab;
+}
+
+#shape-3d:active {
+    cursor: grabbing;
+}
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.cube .front {
+    transform: translateZ(75px);
+}
+
+.cube .back {
+    transform: translateZ(-75px) rotateY(180deg);
+}
+
+.cube .left {
+    transform: rotateY(-90deg) translateZ(75px);
+}
+
+.cube .right {
+    transform: rotateY(90deg) translateZ(75px);
+}
+
+.cube .top {
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.cube .bottom {
+    transform: rotateX(-90deg) translateZ(75px);
+}
+
+.rectangular-prism .front {
+    transform: translateZ(50px);
+    width: 200px;
+    height: 100px;
+
+}
+
+.rectangular-prism .back {
+    transform: translateZ(-50px) rotateY(180deg);
+    width: 200px;
+    height: 100px;
+
+}
+
+.rectangular-prism .left {
+    transform: rotateY(-90deg) translateZ(50px);
+    width: 100px;
+    height: 100px;
+
+}
+
+.rectangular-prism .right {
+    transform: rotateY(90deg) translateZ(150px);
+    width: 100px;
+    height: 100px;
+
+}
+
+.rectangular-prism .top {
+    transform: rotateX(90deg) translateZ(50px);
+    width: 200px;
+    height: 100px;
+
+}
+
+.rectangular-prism .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+    width: 200px;
+    height: 100px;
+
+}
+
+#reset-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #0056b3;
+}

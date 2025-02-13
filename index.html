@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formes Géométriques 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formes Géométriques 3D</h1>
+
+<div id="controls">
+    <label for="shape">Choisissez une forme :</label>
+    <select id="shape">
+        <option value="cube">Cube</option>
+        <option value="rectangular-prism">Prisme rectangulaire</option>
+    </select>
+
+    <label for="face">Choisissez une face :</label>
+    <select id="face">
+        <option value="front">Devant</option>
+        <option value="back">Derrière</option>
+        <option value="left">Gauche</option>
+        <option value="right">Droite</option>
+        <option value="top">Haut</option>
+        <option value="bottom">Bas</option>
+    </select>
+
+    <label for="color">Choisissez une couleur :</label>
+    <input type="color" id="color" value="#ff0000">
+</div>
+
+<button id="reset-button">Réinitialiser</button>
+
+<div id="canvas">
+    <div id="shape-3d" class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
