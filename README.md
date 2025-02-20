@@ -17,8 +17,6 @@ Le projet **Projet-Educatif-3D** est une application éducative qui utilise des 
 1. Clonez ce repository : `git clone https://github.com/LgTechh/Projet-Educatif-3D`
 2. Ouvrez le fichier HTML pour démarrer l'application.
 
-## Contribuer
-Les contributions sont bienvenues. Si vous avez des idées d'améliorations ou des corrections, n'hésitez pas à soumettre une **pull request**.
 
 ## Auteurs
 - LgTechh
