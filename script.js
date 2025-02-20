@@ -35,6 +35,14 @@ function changeFaceColor() {
     }
 }
 
+const applyColorButton = document.getElementById("apply-color-button");
+
+function applyColor() {
+    changeFaceColor();
+}
+
+applyColorButton.addEventListener("click", applyColor);
+
 function onMouseDown(event) {
     isDragging = true;
     lastMouseX = event.clientX;
@@ -78,8 +86,6 @@ function resetAll() {
 }
 
 shapeSelect.addEventListener("change", updateShape);
-colorInput.addEventListener("input", changeFaceColor);
-faceSelect.addEventListener("change", changeFaceColor);
 shape3D.addEventListener("mousedown", onMouseDown);
 document.addEventListener("mousemove", onMouseMove);
 document.addEventListener("mouseup", onMouseUp);
